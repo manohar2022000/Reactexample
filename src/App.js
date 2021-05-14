@@ -1,10 +1,8 @@
-import './App.css';
-import {Button} from 'antd';
-
+import Sidemenu from './Menu';
 function App() {
   return (
     <div className="App">
-      <Button />
+      <Sidemenu />
     </div>
   );
 }
