@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
+import logo from './groot.png';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import { Row, Col } from 'antd';
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
@@ -13,6 +15,10 @@ ReactDOM.render(
     <Header className="header">
       <div className="logo" />
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+      <img src={logo} alt ="i am logo" float= "left"
+    width= "120px"
+    height=" 31px"
+    margin= "16px 24px 16px 0" />
         <Menu.Item key="1">nav 1</Menu.Item>
         <Menu.Item key="2">nav 2</Menu.Item>
         <Menu.Item key="3">nav 3</Menu.Item>
@@ -27,6 +33,7 @@ ReactDOM.render(
       <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
         <Sider className="site-layout-background" width={200}>
           <Menu
+          theme="dark"
             mode="inline"
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
@@ -52,7 +59,39 @@ ReactDOM.render(
             </SubMenu>
           </Menu>
         </Sider>
-        <Content style={{ padding: '0 24px', minHeight: 280 }}>Content</Content>
+        <Content style={{ padding: '0 24px', minHeight: 280 }}> 
+
+    <Row className="tab-heading">
+      <Col span={6}>First Name</Col>
+      <Col span={6}>Last Name</Col>
+      <Col span={6}>Age</Col>
+      <Col span={6}>Gender</Col>
+      
+    </Row>
+    <Row>
+      <Col span={6}>Mano</Col>
+      <Col span={6}>P</Col>
+      <Col span={6}>21</Col>
+      <Col span={6}>Male</Col>
+    </Row>
+    <Row>
+      <Col span={6}>Rahul</Col>
+      <Col span={6}>p</Col>
+      <Col span={6}>18</Col>
+      <Col span={6}>Male</Col>
+    </Row>
+    <Row>
+    <Col span={6}>Tharun</Col>
+      <Col span={6}>V</Col>
+      <Col span={6}>25</Col>
+      <Col span={6}>Male</Col>
+    </Row>
+    <Row>
+      <Col span={6}>Daniel</Col>
+      <Col span={6}>p</Col>
+      <Col span={6}>26</Col>
+      <Col span={6}>Male</Col>
+    </Row></Content>
       </Layout>
     </Content>
     <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>

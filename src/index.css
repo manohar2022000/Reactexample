@@ -1,10 +1,10 @@
-.logo {
+/* .logo {
     float: left;
     width: 120px;
     height: 31px;
     margin: 16px 24px 16px 0;
-    background: rgba(255, 255, 255, 0.3);
-  }
+    background: rgba(185, 28, 28, 0.3);
+  } */
   
   .ant-row-rtl .logo {
     float: right;
@@ -14,3 +14,15 @@
   .site-layout-background {
     background: #fff;
   }
+  @import '~antd/dist/antd.css';
+
+[class~='ant-row'] {
+  background: rgba(194, 191, 191, 0.08);
+  padding :20px;
+  text-align: center;
+}
+[class~='tab-heading'] {
+  background: rgba(255, 62, 4, 0.08);
+  padding :20px;
+  text-align: center;
+}
