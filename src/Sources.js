@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
+import Image from './image';
+
 
 function Tablecontent()
 {
@@ -39,4 +41,6 @@ function Tablecontent()
     </div>
     );
 }
-export default Tablecontent;
+
+
+export {Tablecontent};
