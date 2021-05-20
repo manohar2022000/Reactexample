@@ -106,11 +106,12 @@ class Menulayout extends React.Component{
               <Menu.Item key="8" > <Link to='/option8'> Wolverine</Link> </Menu.Item>
               <Menu.Item key="9" > <Link to='/option9'>Ghost rider </Link> </Menu.Item>
             </SubMenu>
+            
            
           </Menu>
         </Sider>
         
-        <Content style={{ padding: '0 24px', minHeight: 280 }}> 
+        <Content style={{ padding: '0 30px', minHeight: 650 }}> 
 
 {/* <Tablecontent/> */}
            {routes.map((route)=>
